@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-01</title>
+</head>
+<body>
+    <p id="primeiro"> 2 </p>
+
+    <p id="segundo">  3 </p>
+ 
+    <p id="soma"> 2 + 3 =  </p>
+    
+        
+    <script>
+         const p = document.getElementById('primeiro');
+         const s = document.getElementById('segundo');
+         const ss = document.getElementById('soma');
+
+         const v1 = Number(p.innerText);
+         const v2 = Number(s.innerText);
+         const resultado = v1 + v2;
+
+        
+         ss.innerText = `A soma de ${v1} + ${v2} é igual : ${resultado}`;
+        
+
+
+    </script>
+</body>
+</html>
