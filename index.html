@@ -14,7 +14,9 @@
     </header>
 
     <main>
-
+            <p id="saida">
+                A pessoa NOME tem x anos !
+            </p>
     </main>
 
 
@@ -27,13 +29,18 @@
         let pessoa;
         pessoa = {
             id: 1,
-            nome: 'Fulanoo',
+            nome: 'Fulano',
             idade: 15,
             envelhecer: function()
              { this.idade++;}
         };
+
         pessoa.envelhecer();
         console.log(pessoa);
+        const p = document.getElementById('saida');
+        console.log(p);
+
+        p.innerText= `A pessoa ${pessoa.nome} tem ${pessoa.idade} anos !`;
 
     </script>
 </body>
